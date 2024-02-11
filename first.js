@@ -291,6 +291,47 @@ function closePopup() {
 
 
 
+function contact() {
+  var popupContainer = document.createElement('div');
+  popupContainer.className = 'popup-container';
+
+  var popupForm = document.createElement('div');
+  popupForm.className = 'popup-form';
+
+  // You can customize the form content here
+  popupForm.innerHTML = `
+    <p>ADDRESS: IIT MANDI NORTH CAMPUS, MANDI-175005</p>
+    <p>Contact number: (+91)43275 37284</p>
+    <button class="close-button" onclick="closePopup()">Close</button>
+  `;
+
+  popupContainer.appendChild(popupForm);
+  document.body.appendChild(popupContainer);
+
+  // Adjust the width of the popup
+  popupForm.style.width = '300px'; // You can customize the width as needed
+
+  // Prevent scrolling in the background
+  document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+  // Close the pop-up form
+  var popupContainers = document.querySelectorAll('.popup-container');
+  popupContainers.forEach(function (container) {
+    container.remove();
+  });
+
+  // Enable scrolling again
+  document.body.style.overflow = 'auto';
+}
+
+
+
+
+
+
+
 
 
 

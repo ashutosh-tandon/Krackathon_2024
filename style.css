@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background: linear-gradient(to right,#66c2ff, #5cd6d6);
+    background: linear-gradient(to right,#66c2ff, #c7242c);
     color: #333;
     background-image: url('background_final.jpg'); /* Add the path to your doctor image */
     background-size: cover;
@@ -68,7 +68,7 @@ body {
   
   .about__content {
     max-width: 1000px;
-    margin: 0 auto;
+    margin:  auto;
   }
   
   .section__header {
@@ -79,7 +79,7 @@ body {
   
   .about__content p {
     color: #fff; /* White text color for better contrast on the blue background */
-    background-color: #2F80ED; /* Blue background for paragraphs */
+    background-color: #cc2e4b; /* Blue background for paragraphs */
     line-height: 1.8;
     margin-bottom: 30px;
   }
@@ -98,7 +98,7 @@ body {
   }
   
   footer {
-    background: linear-gradient(to right, #2F80ED, #56CCF2); /* Gradient background for the footer */
+    background: linear-gradient(to right, #2767c7, #09cb6a); /* Gradient background for the footer */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -306,7 +306,7 @@ h4 {
 }
 
 p {
-  color: #666;
+  color: white ;
   line-height: 1.6;
 }
 
@@ -321,8 +321,6 @@ p {
 }
 
 /* Add more styles as needed */
-
-
 
 
 
