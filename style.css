@@ -1,11 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    background: linear-gradient(to right,#66c2ff, #5cd6d6);
     color: #333;
     background-image: url('background_final.jpg'); /* Add the path to your doctor image */
     background-size: cover;
     background-position: center;
+    padding : 0 ;
+    margin : 0 px ;
+    background-attachment : fixed ;
   }
   
   header {
@@ -15,7 +18,10 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
-  }
+    background-color : rgba(255,255,255,0.8) ; 
+}
+
+
   
   /* ... (rest of your existing styles) */
   
@@ -164,3 +170,28 @@ a:hover {
     color: #fff;
 }
   
+
+.appoint{
+    border-radius : 18px;
+    background-color:#00ff11
+}
+
+
+.Login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.button_login {
+    background-color: rgb(255, 64, 0) ;
+    border-radius: 28px ;
+    padding-left : 7px ;
+    padding-right : 7px ;
+}
+
+
+
+
+
