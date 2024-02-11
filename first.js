@@ -206,7 +206,7 @@ function calculateBmi() {
     <h2>Your BMI: ${bmiValue}</h2>
   `;
 
-  popupForm.style.width = '300px';
+  resultForm.style.width = '300px'; // Corrected line
 
   resultContainer.appendChild(resultForm);
   document.body.appendChild(resultContainer);
@@ -214,18 +214,6 @@ function calculateBmi() {
   // Prevent scrolling in the background
   document.body.style.overflow = 'hidden';
 }
-
-function closePopup() {
-  // Close the pop-up form
-  var popupContainers = document.querySelectorAll('.popup-container');
-  popupContainers.forEach(function(container) {
-    container.remove();
-  });
-
-  // Enable scrolling again
-  document.body.style.overflow = 'auto';
-}
-
 
 
 
