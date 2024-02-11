@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare & Blood Donation Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff; /* AliceBlue */
+            margin: 0;
+            padding: 0;
+            image-rendering: optimizeQuality;
+            background: url('p4.jpg') center/cover;
+        }    
+
+        header {                                         
+            background-color: #87ceeb; /* SkyBlue */ 
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            position: relative;    
+        }
+
+        header img {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            max-height: 200px; /* Adjust the max-height as needed */
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto; 
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: url('p11.jpg') center/cover;
+            color: #333;                
+        }
+
+        h2 {
+            color: #4169e1; /* RoyalBlue */
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50; /* Green */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #appointment-success,
+        #appointment-error {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2ae7d7;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="pic1.jpg" alt="Logo" height ='100' width="250" >
+    <h1>Web Health Services</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule Appointment</a></li>
+            <li><a href="#">Blood Donation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>   
+        </ul> 
+    </nav>
+</header>
+
+<section id="schedule-appointment">
+    <form id="appointment-form">
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor">
+            <option value="dr_smith">Dr. Smith</option>
+            <option value="dr_jones">Dr. Jones</option>
+            <!-- Add more doctors as needed -->
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="patientName">Your Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <button type="button" onclick="scheduleAppointment()">Schedule Appointment</button>
+        <p id="appointment-success" style="color: green;"></p>
+        <p id="appointment-error" style="color: red;"></p>
+    </form>
+</section>
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule Appointment</a></li>
+            <li><a href="#">Blood Donation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
