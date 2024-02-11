@@ -1,18 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background: linear-gradient(to right, #56CCF2, #2F80ED); /* Gradient background for a colorful look */
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
     color: #333;
+    background-image: url('background_final.jpg'); /* Add the path to your doctor image */
+    background-size: cover;
+    background-position: center;
   }
   
   header {
-    background-image: url('header_background.jpg'); /* Replace with the actual path to your header background image */
+    background-image: url('background_final.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
+  
+  /* ... (rest of your existing styles) */
+  
   
   nav ul {
     list-style: none;
@@ -49,13 +55,13 @@ body {
   }
   
   .section__container {
-    background-color: #f8f8f8;
+    background-color: #f9f5f5; /* Light pastel background color for the section */
     padding: 70px 20px;
     text-align: center;
   }
   
   .about__content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   
@@ -66,7 +72,8 @@ body {
   }
   
   .about__content p {
-    color: #666;
+    color: #fff; /* White text color for better contrast on the blue background */
+    background-color: #2F80ED; /* Blue background for paragraphs */
     line-height: 1.8;
     margin-bottom: 30px;
   }
@@ -85,7 +92,7 @@ body {
   }
   
   footer {
-    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* Gradient background for the footer */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -110,4 +117,50 @@ body {
   footer a:hover {
     text-decoration: underline;
   }
+
+  .footer__bar__content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  #goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff2f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for navigation items */
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #007bff; /* Change to your preferred hover color */
+    color: #fff;
+}
   
