@@ -222,3 +222,76 @@ function closePopup() {
 }
 
 
+
+
+
+function faq() {
+  var popupContainer = document.createElement('div');
+  popupContainer.className = 'popup-container';
+
+  var popupForm = document.createElement('div');
+  popupForm.className = 'popup-form';
+
+  // You can customize the form content here
+  popupForm.innerHTML = `
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Frequently Asked Questions (FAQS)</h2>
+    <h4>&#x2022; What is the purpose of this website?</h4>
+    <p>The website is designed to streamline the doctor appointment process, 
+    offering a centralized platform for users to schedule appointments,
+    check doctor availability, and receive timely reminders.
+    Additionally, it facilitates efficient communication between patients
+    and healthcare providers to address challenges in securing doctor appointments</p>
+    
+    
+    <h4>&#x2022; How does the platform enhance the healthcare experience?</h4>
+    <p> By providing a user-friendly interface, the platform aims to improve the overall healthcare experience. Users can easily register as blood donors, find nearby blood donation drives, and connect with those in need. The website fosters community engagement and responsibility, creating a seamless process for both blood donors and recipients.</p>
+
+     
+    <h4>&#x2022; What features are available for scheduling doctor appointments?</h4>
+     <p>The platform allows users to schedule appointments with ease. It provides information about doctor availability, enables appointment scheduling, and sends timely reminders to ensure a smooth process for users seeking medical consultations.</p>
+ 
+  
+     <h4>&#x2022; How does the platform foster community engagement?</h4>
+     <p>The website promotes a sense of community engagement and responsibility by providing a unified online platform for blood donors and recipients. It facilitates efficient communication and ensures a seamless process for those involved in blood donation activities</p>
+     
+
+     <h4>&#x2022; How does the website contribute to the overall healthcare ecosystem?</h4>
+     <p>The website contributes to the healthcare ecosystem by offering a comprehensive system that addresses challenges in securing doctor appointments and promotes a culture of blood donation. It aims to enhance overall community health and well-being through accessible and user-friendly online services.</p>
+ 
+   
+     `;
+
+
+  popupContainer.appendChild(popupForm);
+  document.body.appendChild(popupContainer);
+
+
+  // Prevent scrolling in the background
+  document.body.style.overflow = 'auto';
+
+
+  closePopup
+}
+
+function closePopup() {
+  // Close the pop-up form
+  var popupContainers = document.querySelectorAll('.popup-container');
+  popupContainers.forEach(function (container) {
+    container.remove();
+  });
+
+  // Enable scrolling again
+  document.body.style.overflow = 'auto';
+}
+
+// The closePopup function remains the same
+
+
+
+
+
+
+
+
+

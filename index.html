@@ -28,7 +28,7 @@
             <li><a href="#">Find Doctors</a></li>
             <li><a href="redirect.html" id="clickTrigger">Schedule Appointment</a></li>
             <li><a href="#">Blood Donation</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="#" onclick="faq()">FAQs</a></li>
             <li><a href="#">Contact</a></li>   
         </ul>
     </nav>
@@ -63,8 +63,9 @@
     </div>
 
 
-<section id="schedule-appointment">
-    <h2>Schedule an Appointment</h2>
+
+  <div class="appoint_home">
+  <h1>Schedule an Appointment</h1>
     <form id="appointment-form">
         <label for="doctor">Select Doctor:</label>
         <select id="doctor" name="doctor">
@@ -81,7 +82,7 @@
             <option value="pulmo">Pulmonologist</option>
             <option value="onco">Oncologist</option>
             <option value="nephro">Nephrologist</option>
-            <option value="allerg">Allergist/</option>
+            <option value="allerg">Allergist</option>
         
             <!-- Add more doctors as needed -->
         </select>
@@ -102,6 +103,7 @@
         <p id="appointment-success" style="color: green;"></p>
         <p id="appointment-error" style="color: red;"></p>
     </form>
+   </div> 
 </section>
 
 <button id="goToTopBtn" onclick="goToTop()">&#8593;</button> 
@@ -111,7 +113,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Find Doctors</a></li>
         <li><a onclick = "bmi()" href="#">BMI Calculator</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#" onclick="faq()">FAQ</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
