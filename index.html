@@ -1,7 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Web Health</title>
-    </head>
-    <body></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare & Blood Donation Platform</title>
+    <link rel = "stylesheet" href= "style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo2.jpg" alt="Logo" width ='100' height ='800'>
+    <h1>Web Health Services</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Schedule Appointment</a></li>
+            <li><a href="#">Blood Donation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>   
+        </ul>
+    </nav>
+</header>
+
+<section id="schedule-appointment">
+    <form id="appointment-form">
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor">
+            <option value="dr_smith">Dr. Smith</option>
+            <option value="dr_jones">Dr. Jones</option>
+            <!-- Add more doctors as needed -->
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="patientName">Your Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <button type="button" onclick="scheduleAppointment()">Schedule Appointment</button>
+        <p id="appointment-success" style="color: green;"></p>
+        <p id="appointment-error" style="color: red;"></p>
+    </form>
+</section>
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Schedule Appointment</a></li>
+            <li><a href="#">Blood Donation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
 </html>
