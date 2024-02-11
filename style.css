@@ -8,7 +8,7 @@ body {
     background-position: center;
     padding : 0 ;
     margin : 0 px ;
-    background-attachment : fixed ;
+    background-color: #333;
   }
   
   header {
@@ -61,7 +61,7 @@ body {
   }
   
   .section__container {
-    background-color: #f9f5f5; /* Light pastel background color for the section */
+    background: linear-gradient(to right,#66c2ff, #c7242c);
     padding: 70px 20px;
     text-align: center;
   }

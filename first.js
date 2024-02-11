@@ -285,7 +285,7 @@ function contact() {
   // You can customize the form content here
   popupForm.innerHTML = `
       <p style="color: #333;">ADDRESS: IIT MANDI NORTH CAMPUS, MANDI-175005</p>
-      <p style="color: #555;">Contact number: (+91)43275 37284</p>
+      <p style="color: #555;">Contact number: (+91)82181 02534</p>
       <button class="close-button" onclick="closePopup()">Close</button>
   `;
 
