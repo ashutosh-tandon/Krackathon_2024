@@ -46,7 +46,7 @@ window.onscroll = function() {
         <button class="new" onclick="newUserRegistration()">New User ?</button>
         
     `;
-
+    popupForm.style.width = '569px';
     popupContainer.appendChild(popupForm);
     document.body.appendChild(popupContainer);
 
@@ -98,6 +98,7 @@ function newUserRegistration() {
         <button onclick="submitRegistration()">Register</button>
     `;
 
+    popupForm.style.width = '569px';
     popupContainer.appendChild(popupForm);
     document.body.appendChild(popupContainer);
 
@@ -136,6 +137,7 @@ function forgotpass() {
         <button onclick="donereset()">Send OTP</button>
     `;
 
+    popupForm.style.width = '569px';
     popupContainer.appendChild(popupForm);
     document.body.appendChild(popupContainer);
 
@@ -169,6 +171,7 @@ function bmi() {
     <button onclick="calculateBmi()">Calculate</button>
   `;
 
+  popupForm.style.width = '569px';
   popupContainer.appendChild(popupForm);
   document.body.appendChild(popupContainer);
 
@@ -203,6 +206,8 @@ function calculateBmi() {
     <h2>Your BMI: ${bmiValue}</h2>
   `;
 
+  popupForm.style.width = '300px';
+
   resultContainer.appendChild(resultForm);
   document.body.appendChild(resultContainer);
 
@@ -234,56 +239,35 @@ function faq() {
 
   // You can customize the form content here
   popupForm.innerHTML = `
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Frequently Asked Questions (FAQS)</h2>
-    <h4>&#x2022; What is the purpose of this website?</h4>
-    <p>The website is designed to streamline the doctor appointment process, 
-    offering a centralized platform for users to schedule appointments,
-    check doctor availability, and receive timely reminders.
-    Additionally, it facilitates efficient communication between patients
-    and healthcare providers to address challenges in securing doctor appointments</p>
-    
-    
-    <h4>&#x2022; How does the platform enhance the healthcare experience?</h4>
-    <p> By providing a user-friendly interface, the platform aims to improve the overall healthcare experience. Users can easily register as blood donors, find nearby blood donation drives, and connect with those in need. The website fosters community engagement and responsibility, creating a seamless process for both blood donors and recipients.</p>
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 style="color: #333;">Frequently Asked Questions (FAQS)</h2>
+      <h4 style="color: #4285f4;">&#x2022; What is the purpose of this website?</h4>
+      <p style="color: #555;">The website is designed to streamline the doctor appointment process, 
+      offering a centralized platform for users to schedule appointments,
+      check doctor availability, and receive timely reminders.
+      Additionally, it facilitates efficient communication between patients
+      and healthcare providers to address challenges in securing doctor appointments</p>
+      
+      <h4 style="color: #4285f4;">&#x2022; How does the platform enhance the healthcare experience?</h4>
+      <p style="color: #555;">By providing a user-friendly interface, the platform aims to improve the overall healthcare experience. Users can easily register as blood donors, find nearby blood donation drives, and connect with those in need. The website fosters community engagement and responsibility, creating a seamless process for both blood donors and recipients.</p>
 
-     
-    <h4>&#x2022; What features are available for scheduling doctor appointments?</h4>
-     <p>The platform allows users to schedule appointments with ease. It provides information about doctor availability, enables appointment scheduling, and sends timely reminders to ensure a smooth process for users seeking medical consultations.</p>
- 
-  
-     <h4>&#x2022; How does the platform foster community engagement?</h4>
-     <p>The website promotes a sense of community engagement and responsibility by providing a unified online platform for blood donors and recipients. It facilitates efficient communication and ensures a seamless process for those involved in blood donation activities</p>
-     
+      <h4 style="color: #4285f4;">&#x2022; What features are available for scheduling doctor appointments?</h4>
+      <p style="color: #555;">The platform allows users to schedule appointments with ease. It provides information about doctor availability, enables appointment scheduling, and sends timely reminders to ensure a smooth process for users seeking medical consultations.</p>
 
-     <h4>&#x2022; How does the website contribute to the overall healthcare ecosystem?</h4>
-     <p>The website contributes to the healthcare ecosystem by offering a comprehensive system that addresses challenges in securing doctor appointments and promotes a culture of blood donation. It aims to enhance overall community health and well-being through accessible and user-friendly online services.</p>
- 
-   
-     `;
+      <h4 style="color: #4285f4;">&#x2022; How does the platform foster community engagement?</h4>
+      <p style="color: #555;">The website promotes a sense of community engagement and responsibility by providing a unified online platform for blood donors and recipients. It facilitates efficient communication and ensures a seamless process for those involved in blood donation activities</p>
 
+      <h4 style="color: #4285f4;">&#x2022; How does the website contribute to the overall healthcare ecosystem?</h4>
+      <p style="color: #555;">The website contributes to the healthcare ecosystem by offering a comprehensive system that addresses challenges in securing doctor appointments and promotes a culture of blood donation. It aims to enhance overall community health and well-being through accessible and user-friendly online services.</p>
+  `;
 
   popupContainer.appendChild(popupForm);
   document.body.appendChild(popupContainer);
 
-
   // Prevent scrolling in the background
-  document.body.style.overflow = 'auto';
-
-
-  closePopup
+  document.body.style.overflow = 'hidden';
 }
 
-function closePopup() {
-  // Close the pop-up form
-  var popupContainers = document.querySelectorAll('.popup-container');
-  popupContainers.forEach(function (container) {
-    container.remove();
-  });
-
-  // Enable scrolling again
-  document.body.style.overflow = 'auto';
-}
 
 // The closePopup function remains the same
 
@@ -300,16 +284,16 @@ function contact() {
 
   // You can customize the form content here
   popupForm.innerHTML = `
-    <p>ADDRESS: IIT MANDI NORTH CAMPUS, MANDI-175005</p>
-    <p>Contact number: (+91)43275 37284</p>
-    <button class="close-button" onclick="closePopup()">Close</button>
+      <p style="color: #333;">ADDRESS: IIT MANDI NORTH CAMPUS, MANDI-175005</p>
+      <p style="color: #555;">Contact number: (+91)43275 37284</p>
+      <button class="close-button" onclick="closePopup()">Close</button>
   `;
 
   popupContainer.appendChild(popupForm);
   document.body.appendChild(popupContainer);
 
   // Adjust the width of the popup
-  popupForm.style.width = '300px'; // You can customize the width as needed
+  popupForm.style.width = '400px'; // You can customize the width as needed
 
   // Prevent scrolling in the background
   document.body.style.overflow = 'hidden';
@@ -319,7 +303,7 @@ function closePopup() {
   // Close the pop-up form
   var popupContainers = document.querySelectorAll('.popup-container');
   popupContainers.forEach(function (container) {
-    container.remove();
+      container.remove();
   });
 
   // Enable scrolling again
