@@ -148,4 +148,77 @@ function donereset ()
     closePopup();
 }
 
+function bmi() {
+  var popupContainer = document.createElement('div');
+  popupContainer.className = 'popup-container';
+
+  var popupForm = document.createElement('div');
+  popupForm.className = 'popup-form';
+
+  // You can customize the form content here
+  popupForm.innerHTML = `
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>BMI Calculator</h2>
+    
+    <label for="height">Height (in cm):</label>
+    <input type="text" id="height" name="height"> 
+
+    <label for="weight">Weight (in kg):</label>
+    <input type="text" id="weight" name="weight">
+
+    <button onclick="calculateBmi()">Calculate</button>
+  `;
+
+  popupContainer.appendChild(popupForm);
+  document.body.appendChild(popupContainer);
+
+  // Prevent scrolling in the background
+  document.body.style.overflow = 'hidden';
+}
+
+
+function calculateBmi() {
+  var height = parseFloat(document.getElementById('height').value);
+  var weight = parseFloat(document.getElementById('weight').value);
+
+  if (isNaN(height) || isNaN(weight)) {
+    alert('Please enter valid numeric values for height and weight.');
+    return;
+  }
+
+  var bmiValue = weight / ((height / 100) * (height / 100));
+  bmiValue = bmiValue.toFixed(2); // Round to two decimal places
+
+  closePopup();
+
+  var resultContainer = document.createElement('div');
+  resultContainer.className = 'popup-container';
+
+  var resultForm = document.createElement('div');
+  resultForm.className = 'popup-form';
+
+  // Display BMI result
+  resultForm.innerHTML = `
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Your BMI: ${bmiValue}</h2>
+  `;
+
+  resultContainer.appendChild(resultForm);
+  document.body.appendChild(resultContainer);
+
+  // Prevent scrolling in the background
+  document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+  // Close the pop-up form
+  var popupContainers = document.querySelectorAll('.popup-container');
+  popupContainers.forEach(function(container) {
+    container.remove();
+  });
+
+  // Enable scrolling again
+  document.body.style.overflow = 'auto';
+}
+
 

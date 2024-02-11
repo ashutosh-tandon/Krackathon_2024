@@ -245,6 +245,31 @@ a:hover {
 }
 
 
+#schedule-appointment {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 100px;
+    display: none; /* Initially hide the target element */
+}
+
+ 
+#schedule-appointment.active {
+    background-color: lightcoral; /* Change background color on hover effect */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
